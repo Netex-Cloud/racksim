@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rack Designer</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+    crossorigin="anonymous"
+  />
+  <script type="importmap">
+    {
+      "imports": {
+        "lit": "https://unpkg.com/lit@3/index.js?module",
+        "lit-html": "https://unpkg.com/lit-html@3/lit-html.js?module",
+        "@lit/reactive-element": "https://unpkg.com/@lit/reactive-element@2/reactive-element.js?module"
+      }
+    }
+  </script>
+</head>
+<body class="bg-light">
+  <rack-app></rack-app>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
