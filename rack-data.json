@@ -1,0 +1,64 @@
+{
+  "title": "Rack Designer",
+  "subtitle": "Interactive rack planner with inventory and rear cable view",
+  "rack": {
+    "totalU": 42,
+    "slots": {
+      "42": "eq-ups-1",
+      "40": "eq-ups-2",
+      "38": "eq-ats-1",
+      "37": "eq-ats-2",
+      "36": "eq-netapp-1",
+      "34": "eq-netapp-2",
+      "32": "eq-netapp-3",
+      "30": "eq-netapp-4",
+      "28": "eq-fujitsu-1",
+      "26": "eq-fujitsu-2",
+      "24": "eq-fujitsu-3",
+      "22": "eq-fujitsu-4",
+      "20": "eq-blade-1",
+      "10": "eq-arista-1",
+      "8": "eq-arista-2",
+      "6": "eq-qfx-1",
+      "4": "eq-qfx-2"
+    }
+  },
+  "equipments": [
+    { "id": "eq-ups-1", "name": "UPS #1", "description": "Primary power backup", "brand": "APC", "model": "Smart-UPS", "heightU": 2, "type": "ups", "ports": [{ "count": 2, "portType": "C14" }], "rearPorts": ["PWR-A", "PWR-B"] },
+    { "id": "eq-ups-2", "name": "UPS #2", "description": "Secondary power backup", "brand": "APC", "model": "Smart-UPS", "heightU": 2, "type": "ups", "ports": [{ "count": 2, "portType": "C14" }], "rearPorts": ["PWR-A", "PWR-B"] },
+    { "id": "eq-ats-1", "name": "ATS PDU #1", "description": "A-side transfer switch", "brand": "Vertiv", "model": "ATS-100", "heightU": 1, "type": "ats", "ports": [{ "count": 2, "portType": "Power In" }], "rearPorts": ["IN-A", "IN-B"] },
+    { "id": "eq-ats-2", "name": "ATS PDU #2", "description": "B-side transfer switch", "brand": "Vertiv", "model": "ATS-100", "heightU": 1, "type": "ats", "ports": [{ "count": 2, "portType": "Power In" }], "rearPorts": ["IN-A", "IN-B"] },
+    { "id": "eq-netapp-1", "name": "NetApp #1", "description": "Storage node shelf", "brand": "NetApp", "model": "AFF A400", "heightU": 2, "type": "netapp", "ports": [{ "count": 8, "portType": "sfp28" }, { "count": 8, "portType": "10GbaseT" }], "rearPorts": ["e0a", "e0b", "e0c", "e0d"] },
+    { "id": "eq-netapp-2", "name": "NetApp #2", "description": "Storage node shelf", "brand": "NetApp", "model": "AFF A400", "heightU": 2, "type": "netapp", "ports": [{ "count": 8, "portType": "sfp28" }, { "count": 8, "portType": "10GbaseT" }], "rearPorts": ["e0a", "e0b", "e0c", "e0d"] },
+    { "id": "eq-netapp-3", "name": "NetApp #3", "description": "Storage node shelf", "brand": "NetApp", "model": "AFF A400", "heightU": 2, "type": "netapp", "ports": [{ "count": 8, "portType": "sfp28" }, { "count": 8, "portType": "10GbaseT" }], "rearPorts": ["e0a", "e0b", "e0c", "e0d"] },
+    { "id": "eq-netapp-4", "name": "NetApp #4", "description": "Storage node shelf", "brand": "NetApp", "model": "AFF A400", "heightU": 2, "type": "netapp", "ports": [{ "count": 8, "portType": "sfp28" }, { "count": 8, "portType": "10GbaseT" }], "rearPorts": ["e0a", "e0b", "e0c", "e0d"] },
+    { "id": "eq-fujitsu-1", "name": "Fujitsu #1", "description": "Compute server", "brand": "Fujitsu", "model": "RX2540", "heightU": 2, "type": "fujitsu", "ports": [{ "count": 2, "portType": "sfp28" }, { "count": 2, "portType": "10GbaseT" }], "rearPorts": ["p1", "p2"] },
+    { "id": "eq-fujitsu-2", "name": "Fujitsu #2", "description": "Compute server", "brand": "Fujitsu", "model": "RX2540", "heightU": 2, "type": "fujitsu", "ports": [{ "count": 2, "portType": "sfp28" }, { "count": 2, "portType": "10GbaseT" }], "rearPorts": ["p1", "p2"] },
+    { "id": "eq-fujitsu-3", "name": "Fujitsu #3", "description": "Compute server", "brand": "Fujitsu", "model": "RX2540", "heightU": 2, "type": "fujitsu", "ports": [{ "count": 2, "portType": "sfp28" }, { "count": 2, "portType": "10GbaseT" }], "rearPorts": ["p1", "p2"] },
+    { "id": "eq-fujitsu-4", "name": "Fujitsu #4", "description": "Compute server", "brand": "Fujitsu", "model": "RX2540", "heightU": 2, "type": "fujitsu", "ports": [{ "count": 2, "portType": "sfp28" }, { "count": 2, "portType": "10GbaseT" }], "rearPorts": ["p1", "p2"] },
+    { "id": "eq-blade-1", "name": "HP C7000 Blade", "description": "Blade enclosure", "brand": "HPE", "model": "C7000", "heightU": 10, "type": "blade", "ports": [{ "count": 16, "portType": "qsfp+" }, { "count": 32, "portType": "sfp+" }], "rearPorts": ["OA1", "OA2", "ICM1", "ICM2"] },
+    { "id": "eq-arista-1", "name": "Arista 25G #1", "description": "Leaf switch", "brand": "Arista", "model": "7050SX", "heightU": 2, "type": "switch", "ports": [{ "count": 48, "portType": "sfp28" }, { "count": 4, "portType": "qsfp28" }], "rearPorts": ["Eth49", "Eth50", "Eth51", "Eth52"] },
+    { "id": "eq-arista-2", "name": "Arista 25G #2", "description": "Leaf switch", "brand": "Arista", "model": "7050SX", "heightU": 2, "type": "switch", "ports": [{ "count": 48, "portType": "sfp28" }, { "count": 4, "portType": "qsfp28" }], "rearPorts": ["Eth49", "Eth50", "Eth51", "Eth52"] },
+    { "id": "eq-qfx-1", "name": "QFX5100 #1", "description": "Management switch", "brand": "Juniper", "model": "QFX5100", "heightU": 2, "type": "switch", "ports": [{ "count": 48, "portType": "10GbaseT" }, { "count": 6, "portType": "qsfp+" }], "rearPorts": ["xe-0/0/48", "et-0/0/0"] },
+    { "id": "eq-qfx-2", "name": "QFX5100 #2", "description": "Management switch", "brand": "Juniper", "model": "QFX5100", "heightU": 2, "type": "switch", "ports": [{ "count": 48, "portType": "10GbaseT" }, { "count": 6, "portType": "qsfp+" }], "rearPorts": ["xe-0/0/48", "et-0/0/0"] },
+    { "id": "eq-spare-1", "name": "Spare Firewall", "description": "Cold standby firewall", "brand": "Palo Alto", "model": "PA-3250", "heightU": 1, "type": "switch", "ports": [{ "count": 8, "portType": "10GbaseT" }], "rearPorts": ["wan", "lan"] },
+    { "id": "eq-spare-2", "name": "Tape Library", "description": "Backup archive device", "brand": "IBM", "model": "TS4300", "heightU": 4, "type": "storage", "ports": [{ "count": 2, "portType": "sfp+" }], "rearPorts": ["fc1", "fc2"] }
+  ],
+  "cablesInventory": [
+    { "id": "cb-1", "name": "SFP28 DAC 3m", "quantity": 20, "portType1": "sfp28", "portType2": "sfp28", "cableType": "dac", "speed": "25G", "length": "3m" },
+    { "id": "cb-2", "name": "CAT6A Patch", "quantity": 40, "portType1": "10GbaseT", "portType2": "10GbaseT", "cableType": "dac", "speed": "10G", "length": "3m" },
+    { "id": "cb-3", "name": "QSFP+ DAC", "quantity": 10, "portType1": "qsfp", "portType2": "qsfp", "cableType": "dac", "speed": "40G", "length": "2m" },
+    { "id": "cb-4", "name": "LC Fiber Pair", "quantity": 32, "portType1": "sfp+", "portType2": "sfp+", "cableType": "fiber", "speed": "10G", "length": "5m" }
+  ],
+  "cableAttachments": [],
+  "rearConnections": [
+    { "fromEquipmentId": "eq-netapp-1", "fromPort": "e0a", "to": "Arista 25G #1", "toPort": "Eth1", "cable": "25G DAC" },
+    { "fromEquipmentId": "eq-netapp-2", "fromPort": "e0a", "to": "Arista 25G #2", "toPort": "Eth1", "cable": "25G DAC" },
+    { "fromEquipmentId": "eq-fujitsu-1", "fromPort": "p1", "to": "QFX5100 #1", "toPort": "xe-0/0/0", "cable": "10G CAT7" },
+    { "fromEquipmentId": "eq-fujitsu-2", "fromPort": "p1", "to": "QFX5100 #2", "toPort": "xe-0/0/0", "cable": "10G CAT7" },
+    { "fromEquipmentId": "eq-blade-1", "fromPort": "ICM1", "to": "Arista 25G #1", "toPort": "Eth49", "cable": "40G DAC" },
+    { "fromEquipmentId": "eq-blade-1", "fromPort": "ICM2", "to": "Arista 25G #2", "toPort": "Eth49", "cable": "40G DAC" },
+    { "fromEquipmentId": "eq-arista-1", "fromPort": "Eth52", "to": "Arista 25G #2", "toPort": "Eth52", "cable": "40G ISL" },
+    { "fromEquipmentId": "eq-qfx-1", "fromPort": "et-0/0/0", "to": "QFX5100 #2", "toPort": "et-0/0/0", "cable": "40G ISL" }
+  ]
+}
